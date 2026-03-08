@@ -110,7 +110,6 @@ alias vim="nvim"
 alias v="nvim"
 alias vi="nvim"
 alias rm="rm -i"
-alias proj="~/HDD/Projects"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -129,8 +128,9 @@ export GPG_TTY=$(tty)
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Github SSH key
-ssh-add -l 2>/dev/null | grep -q "$(ssh-keygen -lf ~/.ssh/github | awk '{print $2}')" \
-  || ssh-add ~/.ssh/github >/dev/null 2>&1
+# Carrega configurações locais de .zshrc.local
+if [ -f ~/.zshrc.local ]; then
+  source ~/.zshrc.local
+fi
 
 
