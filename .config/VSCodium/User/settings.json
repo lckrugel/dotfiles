@@ -1,0 +1,14 @@
+{
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "explorer.confirmDelete": false,
+    "window.newWindowProfile": "Default",
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.formatOnSave": true,
+    "files.autoSaveDelay": 5000,
+    "files.autoSaveWhenNoErrors": true,
+    "editor.wordWrapColumn": 100,
+    "continue.enableTabAutocomplete": false,
+    "go.toolsManagement.autoUpdate": true,
+    "explorer.confirmDragAndDrop": false
+}
